@@ -17,36 +17,18 @@
 function Introduction(element){
   Controler.call(this, element);
   var self = this;
-  this.live_site = 'http://www.oz.com';
+  this.live_site = 'http://www.danieldeporres.net';
   
   this.linker_force = [{
-    hookshot : /^gallery/i,
-    handle : Gallery_tour,
-    extras : ['/images/tour/JPEG/', ' /oz_gallery.json']
-  },{
-    hookshot : /youtube/i,
-    handle : External_link
+    hookshot : /^\/contact/i,
+    handle : Contact
   }]
  
   this.scenes = [];
  
   this.acts = [{
-    item : this.container.find('#gallery'),
-    handle : Oz_gallery
-  },{
-    item : this.container.find('map area, div.sponser_list a, #content.home .content.main .body.right a'),
-    handle : External_link
-  },{
-    item : this.container.find('#gallery'),
-    handle : Gallery_tour,
-    extras : ['/images/tour/JPEG/', ' /oz_gallery.json']
-  },{
-    item : this.container.find('#content.portfolio div.content'),
-    handle : Gallery_tour,
-    extras : ['/images/portfolio/large/', ' /portfolio_gallery.json']
-  },{
-    item : this.container.find('div#content.news div.article_list'),
-    handle : Article_reader
+    item : this.container.find('div#content.home div.gallery'),
+    handle : Main_gallery
   }];
  return this;
 }
