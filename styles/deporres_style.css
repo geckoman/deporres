@@ -24,7 +24,7 @@
   margin-left: -480px;
 }
 #container {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 #full_screen {
   width: 100%;
@@ -36,22 +36,20 @@
 #jax_container {
   position: absolute;
   z-index: 50;
-}
-body {
-  background: #fff url(/images/matte/background-pole-white.jpg) scroll no-repeat 50% 0;
+  top: 50px;
 }
 /*	------------------------- logo style ------------------------
   i use an image inside of the h1 tag so that it will show up when it is printed..
   background-images don't show up when printed..
 */
 #header h1 {
-  float: left;
-  position: relative;
-  height: 79px;
-  width: 161px;
-  text-indent: -1000px;
-  z-index: 0;
-  margin-top: -5px;
+  float:left;
+  height:89px;
+  left:-14px;
+  position:absolute;
+  text-indent:-1000px;
+  width:169px;
+  z-index:3;
 }
 #header h1 a {
   display: block;
@@ -66,47 +64,8 @@ body {
   top: 0;
   left: 0;
 }
-/*	------------------------- navigation ------------------------
-  i started using lists again i think.. it tecnicaly makes more sense as when you have sub navigation due to 
-  the navigation elements now have more proper binding, rather then a loose binding
-  
-  * archive: i quit using lists for navigations.. i guess technicaly they are still a list of pages in which
-  you can accsess.. but it's something i'm currently trying..
-*/
-.navi {
-  position: relative;
-  display: block;
-  float: left;
-}
-.navi li {
-  display: block;
-  float: left;
-}
-.navi a {
-  display: block;
-  position: relative;
-}
-ul.navi.primary {
-  float: right;
-  clear: right;
-  margin: 20px -10px 0 0;
-  min-width: 65.5em;
-}
-ul.navi.primary li {
-}
-ul.navi.primary li a {
-  padding: 5px 10px;
-  margin: 2px 0 0 8px;
-  font-size:1.6em;
-  font-weight: bold;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-ul.navi.primary li a:hover, ul.navi.primary li a.active {
-}
 #header {
   width: 100%;
-  display: none;
 }
 #content {
   width: 100%;
@@ -114,29 +73,8 @@ ul.navi.primary li a:hover, ul.navi.primary li a.active {
 }
 #footer {
   width: 100%;
-  padding-top: 20px;
-  text-align: center;
-  font-size: 1.1em;
+  padding-top: 10px;
   color: #959599;
-}
-.callout {
-}
-.callout h3 {
-  font-size: 2.2em;
-  font-style: italic;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #555560;
-  white-space: nowrap;
-}
-.callout p {
-  font-family: Arial, sans-serif;
-  font-size: 1.1em;
-}
-.callout strong {
-  font-weight: bold;
-  color: #252530;
-  text-transform: uppercase;
 }
 hr {
   border-bottom: 1px solid #c2c2cc;
@@ -154,35 +92,39 @@ a.button {
   text-transform: uppercase;
   text-decoration: none;
 }
-div.content {
-  margin-bottom: 20px;
-  padding: 15px 20px;
-  width:860px;
-}
 
 div.body {
-  width: 490px;
-  margin-bottom: 20px;
-}
-div.column {
-  width: 410px;
+  width: 550px;
   margin-bottom: 20px;
 }
 div.callout {
-  width: 290px;
-  min-height: 240px;
-  padding:  10px 20px;
+  width: 330px;
   margin-bottom: 20px;
-  height: 330px;
 }
-div.column.full {
+
+div.column {
+  width: 410px;
+}
+div.full {
   width: 100%;
+}
+div.wide {
+  width: 500px;
+}
+div.thin {
+  width: 320px;
 }
 div.left {
   margin-right: 20px;
 }
 div.right {
   margin-left: 20px;
+}
+div#footer p {
+  text-align: right;
+  font-size: 1.4em;
+  font-variant: small-caps;
+  position: relative;
 }
 div.gallery {
   width: 100%;
@@ -191,6 +133,8 @@ div.gallery {
 div.gallery div.basins {
   height: 100%;
   width: 100%;
+  z-index: 1;
+  cursor: pointer;
 }
 div.gallery div.basins img {
   position: absolute;
@@ -201,31 +145,54 @@ div.gallery img {
   float: left;
 }
 div.gallery div.thumbs {
-  width: 100%;
-  margin-top: -10px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  height: 100%;
+  margin-left: -10px;
   background: transparent url(/images/back/black_trans.png) scroll repeat 0 0;
   overflow: hidden;
-  height: 10px;
-  cursor: pointer;
+  width: 0px;
+  cursor: all-scroll;
 }
 div.gallery div.thumbs div.holder {
   background: transparent url(/images/back/white_trans.png) scroll repeat 0 0;
-  margin: 40px 0;
-  top: -50px;
-  cursor: pointer;
+  margin: 0 20px;
+  left: -70px;
+  cursor: all-scroll;
 }
 div.gallery div.thumbs div.holder img {
   border: 0 solid #fff;
   opacity: 0.7;
-  margin: 0 10px;
+  margin: 11px 0;
+  float: left;
+  clear: both;
+  cursor: pointer;
+}
+div.gallery div.expander_notifier {
+  position: absolute;
+  top: 200px;
+  right: -8px;
+  width: 37px;
+  height: 110px;
+  background: transparent url(/images/icons/slide_arrow_trap.png) scroll no-repeat 0px 0;
+  cursor: pointer;
+  
 }
 /**/
-div.gallery div.thumbs div.holder img.active {
-  border-width: 0 10px;
-  opacity: 1;
-  margin: 0;
-}
 
+div.gallery div.thumbs div.holder img:hover {
+  border-width: 6px 0;
+  opacity: .85;
+  margin: 5px 0;
+  border-color: #ddd;
+}
+div.gallery div.thumbs div.holder img.active, div.gallery div.thumbs div.holder img.active:hover {
+  border-width: 11px 0 !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+}
 
 div.overlay {
   position: absolute;
@@ -237,6 +204,30 @@ div.overlay {
   background-color: #000;
   opacity: 0;
   height: 0;
+  overflow: hidden;
+}
+div.popin {
+  position: absolute;
+  height: 560px;
+  width: 920px;
+  padding: 15px 20px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  opacity: 0;
+}
+div.popin {
+  color: #fff;
+}
+div.overlay a {
+  display: block;
+  position: absolute;
+  top: 680px;
+  left: 857px;
+  font-size: 1.4em;
+  font-variant: small-caps;
+  color: #eee;
 }
 
 div#full_screen {
@@ -249,13 +240,68 @@ div#full_screen div {
   top: 0;
   left: 0;
 }
+
 div#full_screen div.matte {
-  
+  background: #fff url(/images/matte/oh-shay.jpg) scroll no-repeat 0 100%;
 }
-div#full_screen div.matte div.black_matte {
-  background: #fff url(/images/matte/background-pole-white.jpg) scroll no-repeat 50% 0;
+div#full_screen div.matte div {
+  opacity: 0;
 }
-div#full_screen div.matte div.white_matte {
-  background: #000 url(/images/matte/background-pole-black.jpg) scroll no-repeat 50% 0;
+div#full_screen div.matte div.white_pools {
+  background: #fff url(/images/matte/pools-white.jpg) scroll no-repeat 100% 0;
+}
+div#full_screen div.matte div.black_pools {
+  background: #000 url(/images/matte/pools-black.jpg) scroll no-repeat 100% 0;
+}
+div#full_screen div.matte div.white_pole {
+  background: #fff url(/images/matte/pole-white.jpg) scroll no-repeat 100% 0;
+}
+div#full_screen div.matte div.black_pole {
+  background: #000 url(/images/matte/pole-black.jpg) scroll no-repeat 100% 0;
+}
+div#full_screen div.matte div.white_bubbler {
+  background: #fff url(/images/matte/bubbler-white.jpg) scroll no-repeat 100% 0;
+}
+div#full_screen div.matte div.black_bubbler {
+  background: #000 url(/images/matte/bubbler-black.jpg.jpg) scroll no-repeat 100% 0;
 }
 
+
+div.r_slider {
+ position: absolute;
+ right: -40px;
+ top: 0;
+ width: 2px;
+ background: transparent url(/images/back/white_trans.png) scroll repeat 0 0;
+ opacity: 0.7;
+ cursor: all-scroll;
+}
+
+div#content.resume {
+  padding: 20px;
+  margin: 0;
+  width: 920px;
+}
+ul.skills {
+  margin: 0;
+  float: left;
+  width: 100%;
+  clear: both;
+}
+ul.skills li {
+  float: left;
+  margin-right: 20px;    
+}
+ul.skills ol li {
+  float: none;
+  padding: 0;
+}
+
+
+div.post h3 {
+  margin: 0;
+}
+div.post h5 {
+  float:left;
+  margin-right:20px;
+}
