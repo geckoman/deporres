@@ -56,7 +56,7 @@ body, select, input, textarea {
 }
 .deskman h2 {
   font-size: 3em;
-  margin-bottom: .3em;
+  margin-bottom: 0;
   letter-spacing: -.03em;
 }
 .deskman h3 {
@@ -72,7 +72,7 @@ body, select, input, textarea {
   margin-bottom: .3em;
 }
 .deskman p, .deskman h6 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-bottom: 1em;
   line-height: 1.6em;
 }
@@ -89,8 +89,8 @@ body, select, input, textarea {
   margin: 0 0 10px 0;
 }
 .deskman ul {
-  list-style-position: outside;
-  list-style-type: disc;
+  list-style-position: inside;
+  list-style-type: none;
   margin-left: 15px;
 }
 .deskman ol {
@@ -98,20 +98,23 @@ body, select, input, textarea {
   list-style-type: decimal;
 }
 .deskman li {
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.6em;
   margin:0 0 0 0;
-  padding:5px 0 0 0;
+  padding:0 0 0 0;
 }
 .deskman dl {
-  margin: 5px 0 15px 0;
+  margin: 0 0 15px 0;
 }
 .deskman dl dt {
   font-size: 1.6em;
 }
 .deskman dl dd {
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-left: 1em;
+}
+.deskman dl dd li, .deskman li li {
+  font-size: 1em;
 }
 /* ------------------------- in line elements and links ------------
 */
@@ -133,18 +136,18 @@ body, select, input, textarea {
   text-transform: uppercase;
 }
 .deskman a {
-  text-decoration: underline;
-  color: #002d56;
+  text-decoration: none;
+  color: #212;
 }
 .deskman a:visited, .deskman a:visited * {
-  color: #55758f;
+  color: #656;
 }
 .deskman a.button:visited, .deskman a.button:visited * {
   color: #fff;
 }
 .deskman a:hover {
-  text-decoration: none;
-  color: #005826;
+  text-decoration: underline;
+  color: #434;
 }
 /* ------------------------- forms ----------------------------
   with using 'table-less' forms, I set the width of the labels and but break tags
@@ -237,4 +240,20 @@ body, select, input, textarea {
 	margin-bottom: -35px;
 	padding: 10px 20px 35px;
 	float: left;
+}
+
+/* ------------------------- framed images ---------------------
+*/
+.deskman img.framed {
+	border: 4px solid #eee;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.deskman img.right {
+	float: right;
+	margin-left: 10px;
+}
+.deskman img.left {
+	float: left;
+	margin-right: 10px;
 }
