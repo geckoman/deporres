@@ -325,6 +325,9 @@ ul.inner.navi li a {
   border-bottom: 1px dotted #000;
   padding-left: 25px;
 }
+div#jax_container.black div.popin ul.inner.navi li a {
+  border-bottom-color: #fff;
+}
 
 div#content.resume {
   padding: 20px;

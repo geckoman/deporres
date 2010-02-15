@@ -2,7 +2,7 @@
   "backgrounds" : [{
     "category" : "fashion 1",
     "image" : "backgrounds_1.jpg",
-    "position" : "bottom left",
+    "position" : "bottom right",
     "back_color" : "white"
   },{
     "category" : "fashion 1",
@@ -12,33 +12,43 @@
   },{
     "category" : "fashion 1",
     "image" : "backgrounds_3.jpg",
-    "position" : "bottom right",
+    "position" : "bottom left",
     "back_color" : "white"
   },{
     "category" : "fashion 1",
     "image" : "backgrounds_4.jpg",
-    "position" : "bottom left",
+    "position" : "top left",
     "back_color" : "black"
   },{
     "category" : "fashion 2",
     "image" : "backgrounds_5.jpg",
-    "position" : "center right",
-    "back_color" : "black"
-  },{
-    "category" : "fashion 2",
-    "image" : "backgrounds_6.jpg",
-    "position" : "bottom right",
+    "position" : "bottom left",
     "back_color" : "white"
   },{
     "category" : "fashion 2",
-    "image" : "backgrounds_7.jpg",
-    "position" : "bottom right",
+    "image" : "backgrounds_6.jpg",
+    "position" : "bottom left",
     "back_color" : "black"
+  },{
+    "category" : "fashion 2",
+    "image" : "backgrounds_7.jpg",
+    "position" : "bottom left",
+    "back_color" : "white"
   },{
     "category" : "fashion 2",
     "image" : "backgrounds_8.jpg",
     "position" : "bottom left",
+    "back_color" : "black"
+  },{
+    "category" : "fashion 2",
+    "image" : "backgrounds_9.jpg",
+    "position" : "bottom right",
     "back_color" : "white"
+  },{
+    "category" : "fashion 2",
+    "image" : "backgrounds_10.jpg",
+    "position" : "center right",
+    "back_color" : "black"
   },{
     "category" : "film",
     "back_color" : "white"
