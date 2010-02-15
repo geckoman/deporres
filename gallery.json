@@ -1,25 +1,250 @@
-[{
-  image : thumb-1.jpg
-},{
-  image : thumb-10.jpg
-},{
-  image :thumb-100.jpg  
-},{
-  image :thumb-101.jpg
-},{
-  image :thumb-102.jpg
-},{
-  image :thumb-103.jpg
-},{
-  image :thumb-104.jpg
-},{
-  image :thumb-105.jpg
-},{
-  image :thumb-106.jpg
-},{
-  image :thumb-107.jpg
-},{
-  image :thumb-108.jpg
-},{
-  image :thumb-109.jpg
-}]
+{
+  "backgrounds" : [{
+    "category" : "fashion 1",
+    "image" : "backgrounds_1.jpg",
+    "position" : "bottom left",
+    "back_color" : "white"
+  },{
+    "category" : "fashion 1",
+    "image" : "backgrounds_2.jpg",
+    "position" : "bottom left",
+    "back_color" : "black"
+  },{
+    "category" : "fashion 1",
+    "image" : "backgrounds_3.jpg",
+    "position" : "bottom right",
+    "back_color" : "white"
+  },{
+    "category" : "fashion 1",
+    "image" : "backgrounds_4.jpg",
+    "position" : "bottom left",
+    "back_color" : "black"
+  },{
+    "category" : "fashion 2",
+    "image" : "backgrounds_5.jpg",
+    "position" : "center right",
+    "back_color" : "black"
+  },{
+    "category" : "fashion 2",
+    "image" : "backgrounds_6.jpg",
+    "position" : "bottom right",
+    "back_color" : "white"
+  },{
+    "category" : "fashion 2",
+    "image" : "backgrounds_7.jpg",
+    "position" : "bottom right",
+    "back_color" : "black"
+  },{
+    "category" : "fashion 2",
+    "image" : "backgrounds_8.jpg",
+    "position" : "bottom left",
+    "back_color" : "white"
+  },{
+    "category" : "film",
+    "back_color" : "white"
+  },{
+    "category" : "portraits",
+    "back_color" : "white"
+  }],
+  "gallery_items" : [{
+    "category" : "fashion 1",
+    "image" : "fashion1_1.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_2.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_3.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_4.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_5.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_6.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_7.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_8.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_9.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_10.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_11.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_12.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_13.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_14.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_15.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_16.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_17.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_18.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_19.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_20.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 1",
+    "image" : "fashion1_21.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_1.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_2.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_3.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_4.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_5.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_6.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_7.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_8.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_9.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_10.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_11.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_12.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_13.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_14.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_15.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_16.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_17.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_18.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "fashion 2",
+    "image" : "fashion2_19.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "film",
+    "image" : "film_1.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "film",
+    "image" : "film_2.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "film",
+    "image" : "film_3.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "film",
+    "image" : "film_4.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "film",
+    "image" : "film_6.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "portraits",
+    "image" : "portraits1.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "portraits",
+    "image" : "portraits2.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "portraits",
+    "image" : "portraits3.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "portraits",
+    "image" : "portraits4.jpg",
+    "title" : "deporres"
+  },{
+    "category" : "portraits",
+    "image" : "portraits5.jpg",
+    "title" : "deporres"
+  }]
+}

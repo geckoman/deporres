@@ -18,13 +18,13 @@
   but this has an easy fix with javascript..
 */
 #container, #jax_container {
-  width: 960px;
   overflow: visible;
   left:50%;
-  margin-left: -480px;
 }
 #container {
   margin-bottom: 10px;
+  width: 580px;
+  margin-left: -290px;
 }
 #full_screen {
   width: 100%;
@@ -37,7 +37,10 @@
   position: absolute;
   z-index: 50;
   top: 50px;
+  width: 960px;
+  margin-left: -480px;
 }
+
 /*	------------------------- logo style ------------------------
   i use an image inside of the h1 tag so that it will show up when it is printed..
   background-images don't show up when printed..
@@ -73,8 +76,8 @@
 }
 #footer {
   width: 100%;
-  padding-top: 10px;
-  color: #959599;
+  padding-top: 5px;
+  color: #444;
 }
 hr {
   border-bottom: 1px solid #c2c2cc;
@@ -100,6 +103,7 @@ div.body {
 div.callout {
   width: 330px;
   margin-bottom: 20px;
+  text-align: right;
 }
 
 div.column {
@@ -134,53 +138,98 @@ div.gallery div.basins {
   height: 100%;
   width: 100%;
   z-index: 1;
-  cursor: pointer;
 }
-div.gallery div.basins img {
+div.gallery div.basins.left_arrow {
+  cursor: url(/images/icons/cursor_left_arrow.cur), pointer;
+}
+div.gallery div.basins.right_arrow {
+  cursor: url(/images/icons/cursor_right_arrow.cur), pointer;
+}
+div.gallery div.basins .r_basin {
   position: absolute;
   left: 0;
   top: 0;
+  white-space: nowrap;
+  float: none;
+  height: 580px;
+}
+div.gallery div.basins img {
+  float:none;
 }
 div.gallery img {
   float: left;
 }
-div.gallery div.thumbs {
+div.gallery div.items {
   position: absolute;
   z-index: 2;
-  right: 0;
   top: 0;
   height: 100%;
-  margin-left: -10px;
   background: transparent url(/images/back/black_trans.png) scroll repeat 0 0;
   overflow: hidden;
   width: 0px;
   cursor: all-scroll;
 }
-div.gallery div.thumbs div.holder {
+div.gallery div.items div.holder {
   background: transparent url(/images/back/white_trans.png) scroll repeat 0 0;
   margin: 0 20px;
-  left: -70px;
   cursor: all-scroll;
 }
-div.gallery div.thumbs div.holder img {
+div.gallery div.items div.holder img {
   border: 0 solid #fff;
   opacity: 0.7;
   margin: 11px 0;
   float: left;
   clear: both;
+  display: block;
   cursor: pointer;
 }
 div.gallery div.expander_notifier {
   position: absolute;
   top: 200px;
-  right: -8px;
+  right: 8px;
   width: 37px;
   height: 110px;
   background: transparent url(/images/icons/slide_arrow_trap.png) scroll no-repeat 0px 0;
-  cursor: pointer;
-  
+  cursor: pointer;  
 }
 /**/
+div.gallery div.categories {
+  left: 0;
+  margin-right: -10px;
+}
+div.gallery div.categories div.holder {
+  height: 100%;
+  left: -70px;
+  padding-top:70px;
+}
+div.gallery div.categories div.holder div.item {
+  height: 85px;
+  width: 140px;
+  overflow: hidden;
+  margin: 11px 0;
+  border: 0 solid #fff;
+}
+div.gallery div.categories div.holder div.item.active {
+  border-width: 11px 0;
+  margin: 0;
+}
+div.gallery div.categories div.holder div.item img {
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  opacity: 1;
+  z-index: 0;
+}
+div.gallery div.categories div.holder div.item img.active_scrub {
+  z-index: 1;
+}
+div.gallery div.thumbs {
+  right: 0;
+  margin-left: -10px;
+}
+div.gallery div.thumbs div.holder {
+  left: -70px;
+}
 
 div.gallery div.thumbs div.holder img:hover {
   border-width: 6px 0;
@@ -217,9 +266,16 @@ div.popin {
   overflow: hidden;
   opacity: 0;
 }
-div.popin {
+div#jax_container.white div.popin {
+  color: #222;
+}
+div#jax_container.black div.popin {
   color: #fff;
 }
+div#jax_container.black .deskman a {
+  color: #656;
+}
+
 div.overlay a {
   display: block;
   position: absolute;
@@ -241,29 +297,10 @@ div#full_screen div {
   left: 0;
 }
 
-div#full_screen div.matte {
-  background: #fff url(/images/matte/oh-shay.jpg) scroll no-repeat 0 100%;
-}
 div#full_screen div.matte div {
   opacity: 0;
-}
-div#full_screen div.matte div.white_pools {
-  background: #fff url(/images/matte/pools-white.jpg) scroll no-repeat 100% 0;
-}
-div#full_screen div.matte div.black_pools {
-  background: #000 url(/images/matte/pools-black.jpg) scroll no-repeat 100% 0;
-}
-div#full_screen div.matte div.white_pole {
-  background: #fff url(/images/matte/pole-white.jpg) scroll no-repeat 100% 0;
-}
-div#full_screen div.matte div.black_pole {
-  background: #000 url(/images/matte/pole-black.jpg) scroll no-repeat 100% 0;
-}
-div#full_screen div.matte div.white_bubbler {
-  background: #fff url(/images/matte/bubbler-white.jpg) scroll no-repeat 100% 0;
-}
-div#full_screen div.matte div.black_bubbler {
-  background: #000 url(/images/matte/bubbler-black.jpg.jpg) scroll no-repeat 100% 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 
@@ -275,6 +312,18 @@ div.r_slider {
  background: transparent url(/images/back/white_trans.png) scroll repeat 0 0;
  opacity: 0.7;
  cursor: all-scroll;
+}
+
+ul.inner.navi {
+  float: right;
+  clear: both;
+  text-align: right;
+}
+ul.inner.navi li a {
+  float: right;
+  clear: both;
+  border-bottom: 1px dotted #000;
+  padding-left: 25px;
 }
 
 div#content.resume {
