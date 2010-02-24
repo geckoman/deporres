@@ -308,6 +308,9 @@ function Main_gallery() {
     } else if (!me.children()[0].complete) {
       me.children().eq(0).bind('load', self.basin_visiual_switch); 
       return false;
+    } else if (!me.children()[1].complete) {
+      me.children().eq(1).bind('load', self.basin_visiual_switch); 
+      return false;
     }
     self.thumbs.eq(self.old_acitve_index).removeClass('active');
     self.thumbs.eq(self.active_index).addClass('active');
@@ -316,7 +319,7 @@ function Main_gallery() {
     self.skch(self.basins.eq(self.active_index), {opacity : 1}, function(){self.basins.eq(self.active_index).siblings().remove();}, .85, 'easeOutCubic');
     self.skch(self.basins.eq(self.old_acitve_index), {opacity : 0}, null, .3, 'easeOutQuad');
     var temp_width = self.basins.eq(self.active_index).width();
-    if (temp_width != self.basins.eq(self.old_acitve_index).width()) {
+    if (temp_width != self.basin_holder.width()) {
       self.skch($('div#container'), {
         width : temp_width,
         marginLeft: -temp_width/2
